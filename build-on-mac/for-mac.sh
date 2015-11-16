@@ -1,13 +1,13 @@
-# --The Easy Executable Builder for Python
+# --The Easy Executable Builder for Python-- #
 
 # --All credit to PyInstaller for builder - pyinstaller.org-- #
 
-# -- Target Platform : Linux; Current Platform : Linux
+# -- Target Platform : Mac OS X; Current Platform : Mac OS X -- #
 
 echo "
 The Easy Executable Builder for Python
       
-Target Platform : Linux; Current Platform : Linux
+Target Platform : Mac OS X; Current Platform : Mac OS X
 
 "
 
