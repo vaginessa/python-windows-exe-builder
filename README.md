@@ -19,7 +19,7 @@ A script that automatically generates packaged executables from Python scripts (
 * Install [wine](winehq.org).
   
   * For Debian-based Linux systems: `sudo apt-get install wine winetricks wine-cfg`
-  * For RPM Linux systems: `sudo yum install wine`
+  * For RPM Linux systems: `sudo yum install wine wine-*`
   * For Mac OS X: Follow [this](http://wiki.winehq.org/MacOSX) guide.
 
 This script depends on all of the above to function properly.
