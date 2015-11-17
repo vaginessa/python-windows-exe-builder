@@ -11,6 +11,10 @@ A script that automatically generates packaged executables from Python scripts (
 * Install pyinstaller using pip (for eg. `sudo pip install --global pyinstaller` for *nix systems.
 
 * Install [scons](http://www.scons.org).
+  
+  * For Debian-based linux systems: `sudo apt-get install scons`
+  * For RPM Linux systems: download [this](http://downloads.sourceforge.net/project/scons/scons/2.4.1/scons-2.4.1-1.noarch.rpm?r=http%3A%2F%2Fwww.scons.org%2F&ts=1447744323&use_mirror=netassist) and install.
+  * For Mac OS X: download [this](http://downloads.sourceforge.net/project/scons/scons/2.4.1/scons-2.4.1.tar.gz?r=http%3A%2F%2Fwww.scons.org%2Fdownload.php&ts=1447744509&use_mirror=netassist), then untar, then cd into the extracted directory and `sudo python setup.py install`.
 
 # 32-bit executables on 64-bit
 
