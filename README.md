@@ -10,6 +10,8 @@ A script that automatically generates packaged executables from Python scripts (
 
 * Install pyinstaller using pip (for eg. `sudo pip install --global pyinstaller` for *nix systems.
 
+* Install [scons](scons.org).
+
 # 32-bit executables on 64-bit
 
 Apparently, Python (and PyInstaller) can only generate binaries of the architecture of Python on your machine.
