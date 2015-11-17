@@ -6,7 +6,7 @@ A script that automatically generates packaged executables from Python scripts (
 
 * Ensure you have Python
 
-* Install pip
+* Install [pip](https://pypi.python.org/pypi/pip)
 
 * Install pyinstaller using pip (for eg. `sudo pip install --global pyinstaller` for *nix systems.
 
