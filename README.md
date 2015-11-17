@@ -2,7 +2,8 @@
 
 A script that automatically generates packaged executables from Python scripts (using PyInstaller).
 
-![Python](http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-python-icon.png) ![To](http://icons.iconarchive.com/icons/icons8/ios7/256/Arrows-Right-icon.png) ![Packaged app](https://www.iconfinder.com/icons/196757/download/png/128)
+![Python](http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-python-icon.png) ![To](http://icons.iconarchive.com/icons/icons8/ios7/256/Arrows-Right-icon.png) <img style="float;" src="https://www.iconfinder.com/icons/196757/download/png/128">
+
 
 # Preparation
 
