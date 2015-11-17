@@ -10,7 +10,7 @@ A script that automatically generates packaged executables from Python scripts (
 
 * Install pyinstaller using pip (for eg. `sudo pip install --global pyinstaller` for *nix systems.
 
-* Install [scons](scons.org).
+* Install [scons](http://www.scons.org).
 
 # 32-bit executables on 64-bit
 
