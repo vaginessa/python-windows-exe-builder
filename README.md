@@ -6,10 +6,6 @@ A script that automatically generates packaged executables from Python scripts (
 
 * Ensure you have Python.
 
-* Install [pip](https://pypi.python.org/pypi/pip).
-
-* Install pyinstaller using pip (for eg. `sudo pip install --global pyinstaller` for *nix systems.
-
 * Install [scons](http://www.scons.org).
   
   * For Debian-based Linux systems: `sudo apt-get install scons`
