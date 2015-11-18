@@ -1,4 +1,4 @@
-# python-easy-build - The Easy Executable Builder for Python
+# The Easy Executable Builder for Python
 
 A script that automatically generates packaged executables from Python scripts (using PyInstaller).
 
@@ -22,6 +22,10 @@ A script that automatically generates packaged executables from Python scripts (
   * For Mac OS X: install `XCode`, install its `Command Line Tools`, then follow [this](http://wiki.winehq.org/MacOSX) guide.
 
 This script depends on all of the above to function properly.
+
+# Documentation
+
+Can be found in the code.
 
 # 32-bit executables on 64-bit
 
