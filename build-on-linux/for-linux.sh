@@ -11,10 +11,6 @@ Target Platform : Linux; Current Platform : Linux
 
 "
 
-#-- Check distro
-
-
-
 #-- Get PyInstaller
 
 wget https://github.com/pyinstaller/pyinstaller/archive/master.zip

@@ -12,10 +12,33 @@
 
 echo "
 The Easy Executable Builder for Python
-      
+
 Target Platform : Windows; Current Platform : Mac OS X
 
 "
+
+echo "
+We're gonna need sudo for installing SCons (http://www.scons.org)
+
+"
+
+#-- Get SCons
+
+# Get the tarball
+
+wget http://downloads.sourceforge.net/project/scons/scons/2.4.1/scons-2.4.1.tar.gz
+
+# Untar it
+
+tar -xvzf scons-2.4.1.tar.gz
+
+# Change into directory
+
+cd scons-2.4.1
+
+# Execute the setup script (setup.py)
+
+sudo python setup.py
 
 #-- Get PyInstaller
 
@@ -35,12 +58,12 @@ read -p "Python file path: " $pypath
 # Is the app GUI?
 
 # This prevents a command window being launched before the app
-# DO NOT 'YES' IN CASE OF COMMAND-BASED APP 
+# DO NOT 'YES' IN CASE OF COMMAND-BASED APP
 
 read -r -p "
 Is it a GUI app? [y/N] " gui
 case $gui in
-    [yY][eE][sS]|[yY]) 
+    [yY][eE][sS]|[yY])
         guichoice="yes"
         ;;
     *)
@@ -58,7 +81,7 @@ esac
 read -r -p "
 Produce single bundled executable? [y/N] " sfile
 case $sfile in
-    [yY][eE][sS]|[yY]) 
+    [yY][eE][sS]|[yY])
         sfilechoice="yes"
         ;;
     *)

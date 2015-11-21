@@ -12,10 +12,69 @@
 
 echo "
 The Easy Executable Builder for Python
-      
+
 Target Platform : Windows; Current Platform : Linux
 
 "
+
+#-- Check distro
+
+# LSB distro check
+
+lsb_command=`which lsb_release 2> /dev/null`
+if [ -z "$lsb_command" ]; then
+  lsb_command=`which lsb_release 2> /dev/null`
+fi
+
+# Check distro
+
+if [ -n "$lsb_command" ]; then
+  DISTRO=`$lsb_command -si | tr '[:upper:]' '[:lower:]'`
+elif [ -e /etc/arch-release ]; then
+  DISTRO=arch
+elif [ -e /etc/debian_version ] || [ -e /etc/debian_release ]; then
+  DISTRO=debian
+elif [ -e /etc/fedora-release ]; then
+  DISTRO=fedora
+elif [ -e /etc/redhat-release ]; then
+  DISTRO=redhat
+elif [ -e /etc/centos-release ]; then
+  DISTRO=centos
+fi
+
+#-- Install SCons + Wine
+
+# Arch Linux
+
+if [ "$DISTRO" == "arch" ]; then
+    sudo pacman -S scons wine winetricks
+  fi
+
+# Debian-based
+
+elif [ "$DISTRO" == "linuxmint" ] || [ "$DISTRO" == "ubuntu" ] || [ "$DISTRO" == "debian" ] || [ "$DISTRO" == "zorin" ]; then
+
+    sudo apt-get -y install scons wine winetricks
+
+  fi
+
+
+# Redhat-based
+
+elif [ "$DISTRO" == "fedora" ] || [ "$DISTRO" == "redhat" ] || [ "$DISTRO" == "centos" ]; then
+
+    sudo yum install scons wine winetricks
+
+  fi
+
+elif [ -z "$DISTRO" ]; then
+  echo "Unable to detect distro, skipping package installation"
+  echo "Please be aware that for this program, you will need the following installed:"
+  echo "  scons"
+  echo "  wine"
+  echo "  winetricks"
+fi
+
 
 #-- Get PyInstaller
 
@@ -35,12 +94,12 @@ read -p "Python file path: " $pypath
 # Is the app GUI?
 
 # This prevents a command window being launched before the app
-# DO NOT 'YES' IN CASE OF COMMAND-BASED APP 
+# DO NOT 'YES' IN CASE OF COMMAND-BASED APP
 
 read -r -p "
 Is it a GUI app? [y/N] " gui
 case $gui in
-    [yY][eE][sS]|[yY]) 
+    [yY][eE][sS]|[yY])
         guichoice="yes"
         ;;
     *)
@@ -58,7 +117,7 @@ esac
 read -r -p "
 Produce single bundled executable? [y/N] " sfile
 case $sfile in
-    [yY][eE][sS]|[yY]) 
+    [yY][eE][sS]|[yY])
         sfilechoice="yes"
         ;;
     *)

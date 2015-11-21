@@ -6,10 +6,11 @@
 
 echo "
 The Easy Executable Builder for Python
-      
+
 Target Platform : Mac OS X; Current Platform : Mac OS X
 
 "
+
 #-- Get PyInstaller
 
 wget https://github.com/pyinstaller/pyinstaller/archive/master.zip
@@ -27,12 +28,12 @@ read -p "Python file path: " $pypath
 # Is the app GUI?
 
 # This prevents a command window being launched before the app
-# DO NOT 'YES' IN CASE OF COMMAND-BASED APP 
+# DO NOT 'YES' IN CASE OF COMMAND-BASED APP
 
 read -r -p "
 Is it a GUI app? [y/N] " gui
 case $gui in
-    [yY][eE][sS]|[yY]) 
+    [yY][eE][sS]|[yY])
         guichoice="yes"
         ;;
     *)
@@ -49,7 +50,7 @@ esac
 read -r -p "
 Produce single bundled executable? [y/N] " sfile
 case $sfile in
-    [yY][eE][sS]|[yY]) 
+    [yY][eE][sS]|[yY])
         sfilechoice="yes"
         ;;
     *)
