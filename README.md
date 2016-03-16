@@ -1,27 +1,34 @@
-# The Executable Builder for Python
+# The Windows Executable Builder for Python
 
-A script that automatically generates packaged executables from Python scripts (using PyInstaller).
+A script that automatically generates packaged Windows executables from Python scripts (using PyInstaller) on OS X and Linux.
 
-![Python](http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-python-icon.png) ![To](http://icons.iconarchive.com/icons/icons8/ios7/256/Arrows-Right-icon.png) <img  src="https://www.iconfinder.com/icons/196757/download/png/128" width="200" height="200">
-
+Released under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
 # Preparation
 
-* Ensure you have Python.
+* Install [wine](http://winehq.org).
 
-* Mac OS X: Install [wine](winehq.org).
+    * For Mac OS X: install `XCode`, install its `Command Line Tools`, then follow [this](http://wiki.winehq.org/MacOSX) guide.
 
-  * For Mac OS X: install `XCode`, install its `Command Line Tools`, then follow [this](http://wiki.winehq.org/MacOSX) guide.
+# Usage
 
-This script depends on all of the above to function properly.
+First run `environment_setup.sh`,
+```
+environment_setup.sh [options]
 
-# Documentation
+Options:
 
-Can be found in the code.
+-p | --python <version> : Specify version (27 for 2.7, 35 for 3.5 and so on)
+-e | --extra <file>     : Give file with newline-separated PyPi packages to be installed
+-h | --help             : Print this help message and exit
+```
 
-# 32-bit executables on 64-bit
+Then, simply run `wine pyinstaller [options for pyinstaller]`.
 
-Apparently, Python (and PyInstaller) can only generate binaries of the architecture of Python on your machine.
-If you are on a 64-bit machine wanting to build for 32-bit, use a 32-bit OS in a VM or another machine.
+# Move (Wine) development environment
 
-Sorry, but this is a limitation of the fact that Python is interpreted.
+Just copy the `~/.wine` folder to the new machine.
+
+# A note on architecture
+
+This script produces 32-bit executables no matter the architecture of the host.
