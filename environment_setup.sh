@@ -48,7 +48,7 @@ if [ "$VERSION" == "27" ] then
 
     wine msiexec /qn pysetup.msi
 
-    setx \M PATH "%PATH%;C:\Python\Python27;C:\Python\Python27\Scripts"
+    wine setx \M PATH "%PATH%;C:\Python\Python27;C:\Python\Python27\Scripts"
 
     wine pip install pypiwin32
 
