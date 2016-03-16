@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright (c) 2016 bharadwaj-raju. All Rights Reserved.
+# Copyright (c) 2016 Bharadwaj Raju <bharadwaj.raju777@gmail.com>. All Rights Reserved.
 
 # Apache License 2.0
 
