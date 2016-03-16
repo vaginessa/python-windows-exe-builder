@@ -1,1 +1,7 @@
-{"name":"The Easy Executable Builder for Python","tagline":"A script that automatically generates packaged executables from Python scripts (using PyInstaller).","body":"# The Easy Executable Builder for Python\r\n\r\n\r\n\r\n####Python is a great language. \r\n\r\nHowever, distributing Python apps is **hard**. \r\n\r\nThere are *loads* of hacks needed to get it to build into a portable executable on your current platform, let alone cross-compile.\r\n\r\n## What does *this* script do?\r\n\r\nSimplify. This distills the process into a simple script that asks you simple questions, and you get an executable.\r\n\r\n## Warning: Pre-Alpha!\r\n\r\nThis project is in the pre-alpha stage, but should go stable in a few weeks.","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
+{
+  "name": "The (Mac/Linux to Windows) Executable Builder for Python",
+  "tagline": "Build Windows exes on your OS X or Linux computer",
+  "body": "# Build Windows exes on your OS X or Linux computer\r\n\r\nThis script allows you to build Windows executables using PyInstaller - without Windows!\r\n\r\nAll you need is [Wine](http://winehq.org).\r\n\r\nRefer to the README for more information.",
+  "google": "",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
