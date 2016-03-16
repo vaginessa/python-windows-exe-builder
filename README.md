@@ -19,7 +19,7 @@ environment_setup.sh [options]
 Options:
 
 -p | --python <version> : Specify version (27 for 2.7, 35 for 3.5 and so on)
--e | --extra <file>     : Give file with newline-separated PyPi packages to be installed
+-e | --extra <file>     : Give file with a newline-separated list of PyPi packages to be installed
 -h | --help             : Print this help message and exit
 ```
 
