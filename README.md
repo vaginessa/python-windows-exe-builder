@@ -12,15 +12,21 @@ Released under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2
 
 # Usage
 
-First run `environment_setup.sh`,
+First run `environment_setup.py`,
 ```
-environment_setup.sh [options]
+Usage: environment_setup.py [-h] -v version [-p file]
 
-Options:
+Package a Python program for Windows on Mac and Linux.
 
--p | --python <version> : Specify version (27 for 2.7, 35 for 3.5 and so on)
--e | --extra <file>     : Give file with a newline-separated list of PyPi packages to be installed
--h | --help             : Print this help message and exit
+optional arguments:
+  -h, --help            show this help message and exit
+  -v version, --python version
+                        Specify Python version as such: 2 for 2.7, 3 for 3.5
+                        and 34 for 3.4.
+  -p file, --packages file
+                        [optional] Specify newline-separated list file of PyPi packages
+                        to install
+
 ```
 
 Then, simply run `wine pyinstaller [options for pyinstaller]`.
